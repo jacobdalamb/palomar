@@ -1,0 +1,32 @@
+/* the props */
+@import "https://unpkg.com/open-props";
+
+/* optional imports that use the props */
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props/buttons.min.css";
+
+@font-face {
+  font-family: "Geist Variable";
+  src: url("../../GeistVariableVF.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-sans: "Geist Variable", sans-serif;
+}
+
+body {
+    color: yellow;
+    background-color: #7D84E7;
+}
+
+
+p {
+    font-size: 16px;
+}
+
+img {
+    border-color: yellow;
+}

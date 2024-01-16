@@ -1,0 +1,5 @@
+Perry*Steve*80000
+Smith*John*70000
+Park*Sherri*85000
+Straight*Amy*75000
+Jones*Carol*82000

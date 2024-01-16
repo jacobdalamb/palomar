@@ -1,0 +1,70 @@
+/* the props */
+@import "https://unpkg.com/open-props";
+
+/* optional imports that use the props */
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props/buttons.min.css";
+
+@font-face {
+  font-family: "Geist Variable";
+  src: url("../../GeistVariableVF.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-sans: "Geist Variable", sans-serif;
+}
+
+body {
+    background-color: #EDE8B1;
+    padding: var(--size-2);
+}
+
+header {
+    background-color: #824920;
+    padding: var(--size-1);
+}
+
+header h1 {
+    color: white;
+}
+
+form {
+    width: var(--size-fluid-10);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-5);
+    padding: var(--size-2) 0;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    color: #824920;
+}
+
+input,
+button {
+    /* border: 2px solid var(--gray-6); */
+}
+
+form div input[type="text"] {
+    width: min-content;
+}
+
+form div input[type="number"] {
+    width: 4rem;
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+    width: fit-content;
+    padding: var(--size-1);
+    /* border-radius: var(--radius-1); */
+}

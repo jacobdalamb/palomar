@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body style="background-color: #F0E68C;">
+        <img src="KingLibLogo.jpg" width="800" alt="">
+        <div id="main-container">
+            <p>Please sign up</p>
+            <form method="POST" action="assignment_1_add_patron.php">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName">
+                <br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="city-select">City of residence:</label>
+                <select name="city" id="city-select">
+                    <option value="">-</option>
+                    <option value="chicago">Chicago</option>
+                    <option value="detroit">Detroit</option>
+                    <option value="toronto">Toronto</option>
+                </select>
+                <br>
+                <input type="submit" name="submit" id="form-submit" value="Submit Information">
+            </form>
+        </div>
+    </body>
+
+</html>

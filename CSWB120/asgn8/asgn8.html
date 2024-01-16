@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Assignment 8</title>
+        <link rel="stylesheet" href="asgn8.css" />
+    </head>
+
+    <body>
+        <main>
+            <h2>Login</h2>
+            <form>
+                <div>
+                    <label for="username">User ID:</label>
+                    <input type="text" id="username" name="username" autocomplete="given-name" />
+                    <span class="error" id="username_error"></span>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" autocomplete="current-password" />
+                    <span class="error" id="password_error"></span>
+                </div>
+                <input type="button" id="mysubmit" value="Login" />
+            </form>
+            <div id="targetDiv">
+                <p></p>
+            </div>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $("#mysubmit").click(function () {
+                    var targetDiv = $("#targetDiv");
+                    var username = $("#username").val();
+                    var password = $("#password").val();
+                    var guess = username + "|" + password;
+
+                    var data = guess;
+
+                    $.post("https://profperrytest.com/AJAXPHP/validate_logon.php", "data=" + data, function (result) {
+                        targetDiv.html(result);
+                    });
+                });
+            }); // end ready
+        </script>
+    </body>
+</html>

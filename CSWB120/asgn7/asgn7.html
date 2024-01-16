@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Assignment 7</title>
+        <link rel="stylesheet" href="asgn7.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="asgn7.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />
+    </head>
+
+    <body>
+        <main>
+            <h2>Health Care Exchange - First Draft</h2>
+
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Sign Up</a></li>
+                    <li><a href="#tabs-2">Pick a Plan</a></li>
+                    <li><a href="#tabs-3">How do you feel?</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <form>
+                        <div>
+                            <label for="first_name">First Name:</label>
+                            <input type="text" id="first_name" name="first-name" />
+                            <span class="error" id="first_error"></span>
+                        </div>
+                        <div>
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name" name="last-name" />
+                            <span class="error" id="last_error"></span>
+                        </div>
+                        <div>
+                            <label for="datepicker">Start Date:</label>
+                            <input type="text" id="datepicker" name="start-date" />
+                            <span class="error" id="date_error"></span>
+                        </div>
+                        <input type="button" id="mysubmit" value="Create an Account" />
+                    </form>
+                    <div id="error-message"></div>
+                </div>
+                <div id="tabs-2">
+                    <div class="container">
+                        <div id="great-plan" class="item"><h4>Great Plan!</h4></div>
+                        <div id="drop" class="item"><h4>Drop your plan here</h4></div>
+                        <div id="poor-plan" class="item"><h4>Poor Plan!</h4></div>
+                    </div>
+                </div>
+                <div id="tabs-3">
+                    <input type="button" id="feelings" value="Show My Feelings" />
+                    <div id="feelings-message"><h3>How do you feel now?</h3></div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
